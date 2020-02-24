@@ -16,31 +16,8 @@
    <link rel="stylesheet" href="smallscreens.css">
 </head>
 
-<body data-spy="scroll" data-target="#top-nav" data-offset="10">
-
-   <!-- HOME -->
-   <div id="home">
-      <navbar></navbar>
-      <header ng-view id="main-content" class="d-flex align-items-center position-relative h-100 w-100"></header>
-   </div>
-
-   <!-- WHY TUNELAB -->
-   <whytunelab></whytunelab>
-
-   <!-- PEOPLE SAID -->
-   <peoplesaid></peoplesaid>
-
-   <!-- TOP CHART -->
-   <topchart></topchart>
-
-   <!-- REPOST SERVICE -->
-   <repostservice></repostservice>
-
-   <!-- PARTNERS -->
-   <partners></partners>
-
-   <!-- DEMO DROP -->
-   <demodrop></demodrop>
+<body ng-view data-spy="scroll" data-target="#top-nav" data-offset="10">
+   
 
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

@@ -149,6 +149,10 @@ body{
 .form-group{
     padding: 0 !important;
 }
+.form-check{
+    margin-left: 1.6em;
+    color: gray;
+}
 #btnSignin, .form-control{
     border-color: rgb(128, 128, 128) !important;
     color: white !important;
