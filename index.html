@@ -16,8 +16,12 @@
    <link rel="stylesheet" href="smallscreens.css">
 </head>
 
-<body ng-view data-spy="scroll" data-target="#top-nav" data-offset="10">
-   
+<body data-spy="scroll" data-target="#top-nav" data-offset="10">
+
+   <navbar></navbar>
+   <div ng-view>
+
+   </div>  
 
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

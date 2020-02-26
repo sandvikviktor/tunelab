@@ -6,14 +6,26 @@ angular.module('tunelab', ['ngRoute'])
         templateUrl: "views/home.html"
     })
     .when("/signin", { 
-        templateUrl: "views/login.html"
-    })
-    .when("/forgotpw", { 
-        templateUrl: "views/forgotpw.html"
+        templateUrl: "views/login.html",
+        controller: "loginController"
     })
     .when("/registrate", { 
-        templateUrl: "views/registrate.html"
+        templateUrl: "views/registrate.html",
+        controller: "registerController"
     })
+})
+
+// Sign In - Controller
+.controller('loginController', function($scope) {
+    $scope.username = "";
+    $scope.password = "";
+})
+
+//Register - Controller
+.controller('registerController', function($scope) {
+    $scope.username = "";
+    $scope.email = "";
+    $scope.password = "";
 })
 
 // People Said - Controller
